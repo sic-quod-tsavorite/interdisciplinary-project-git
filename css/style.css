@@ -1,0 +1,48 @@
+#app {
+    background-color: #fefefe;
+}
+
+#carousel {
+    padding: 0;
+}
+
+#main-p1 {
+    display: flex;
+    justify-content: center;
+}
+
+#productCont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1400px;
+    margin: 0 auto 0 auto;
+}
+
+#tt1 {
+    text-decoration: none;
+    color: #FF9800;
+}
+
+#home {
+    text-decoration: none;
+}
+
+#cardText li{
+    list-style-type: none;
+}
+
+#card1 {
+    justify-content: center;
+}
+
+#buy-btn {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-left: 35px;
+}
