@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!--comment-->
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
@@ -8,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+ 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
 <body>
 
@@ -23,33 +25,25 @@
                         <v-toolbar-title>
                             <div id="home">
                                 <a id="home" href="index.html">
-                                <span class="font-weight-bold white--text">Best Shirts:</span>
-                                <span class="font-weight-light white--text">SHIRTS FOR YOU</span>
-                            </a>
+                                    <span class="font-weight-bold white--text">Best Shirts:</span>
+                                    <span class="font-weight-light white--text">SHIRTS FOR YOU</span>
+                                </a>
                             </div>
                         </v-toolbar-title>
                         <div class="text-center ml-5">
-                                <v-menu offset-y>
-                                  <template v-slot:activator="{ on }">
-                                    <v-btn
-                                      color="primary"
-                                      dark
-                                      v-on="on"
-                                    >
-                                      Category
+                            <v-menu offset-y>
+                                <template v-slot:activator="{ on }">
+                                    <v-btn color="primary" dark v-on="on">
+                                        Category
                                     </v-btn>
-                                  </template>
-                                  <v-list>
-                                    <v-list-item
-                                      v-for="(item, index) in items1"
-                                      :key="index"
-                                      @click=""
-                                    >
-                                      <v-list-item-title>{{ item.title }}</v-list-item-title>
-                                    </v-list-item>
-                                  </v-list>
-                                </v-menu>
-                              </div>
+                                </template>
+                                <v-list>
+                                    <v-list-item v-for="(item, index) in items1" :key="index" @click="">
+                                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                    </v-list-item>                                    
+                                </v-list>
+                            </v-menu>
+                        </div>
                         <v-spacer></v-spacer>
                         <div>Search Bar Here</div>
                         <v-spacer></v-spacer>
@@ -250,11 +244,11 @@
                             </v-card-text>
                         </v-card>
                     </v-footer>
-    </div>
 
-    </v-container>
-    </v-content>
-    </v-app>
+                </v-container>
+            </v-content>
+        </v-app>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
