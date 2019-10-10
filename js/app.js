@@ -37,10 +37,12 @@ var app = new Vue({
           'fa fa-linkedin',
           'fa fa-instagram',
         ],
+        /*
         items1: [
           { title: 'Men' },
           { title: 'Women' },
         ],
+        */
         show: false,
         messages: 0,
       }
